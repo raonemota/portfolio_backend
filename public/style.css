@@ -154,8 +154,8 @@ header div{
 .modal .close-modal{
     color: black;
     cursor: pointer;
-    right: 10px;
-    top:10px;
+    right: 5px;
+    top:5px;
     position: absolute;
 }
 

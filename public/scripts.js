@@ -6,8 +6,7 @@ const cursos = document.querySelectorAll('.curso');
 for (let card of cards){
     card.addEventListener("click", function(){
         const videoId = card.getAttribute("id");
-        modalOverlay.classList.add('active');
-        modalOverlay.querySelector("iframe").src = `https://www.youtube.com/embed/${videoId}`
+        window.location.href = `/video?id=${videoId}`
     });
 }
 
