@@ -1,0 +1,25 @@
+<html>
+    <head>
+        
+        <link href="style.css" rel="stylesheet">
+
+        {% block head %}
+            
+            <title>Home - BootCamp LaunchBase</title>
+        
+        {% endblock %}
+
+    </head>
+    <body>
+        <header>
+            <div class="links">
+                <a href="/">Sobre</a>
+                <a href="/portfolio">Aulas</a>
+                <a href="/contents">Conteúdos</a>
+            </div>
+        </header>
+
+        {% block content %}{% endblock %}
+        
+    </body>
+</html>

@@ -1,0 +1,25 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>About - BootCamp LaunchBase</title>   
+{% endblock %}
+
+{% block content %}
+
+        <div id="wrapper">
+            <img src="{{item.avatar_url}}" alt="Imagem de {{item.name}}">
+            <h1>{{item.name}}</h1>
+            <h2>{{item.title}}</h2>
+            <p>{{item.subtitle}}</p>
+
+            <div id="links-footer" class="links">
+                {% for item in item.link %}
+                    <a href="{{ item.url }}" target="_blank">{{item.name}}</a>
+                {% endfor %}
+            </div>
+
+        </div>
+
+        
+
+{% endblock %}
